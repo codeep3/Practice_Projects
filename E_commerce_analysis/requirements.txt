@@ -1,0 +1,6 @@
+seaborn
+pandas
+scikit-learn
+sqlalchemy
+psycopg2
+plotly
