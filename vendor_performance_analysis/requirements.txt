@@ -4,5 +4,9 @@ pandas
 scikit-learn
 matplotlib
 seaborn
+<<<<<<< HEAD
 psycopg2
 sqlalchemy
+=======
+plotly
+>>>>>>> 956c03dc0450ac0c5f1d29c7f3044bde88784180
