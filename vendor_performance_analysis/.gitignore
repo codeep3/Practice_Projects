@@ -1,0 +1,9 @@
+data/begin_inventory.csv
+data/end_inventory.csv
+data/purchase_prices.csv
+data/purchases.csv
+data/sales.csv
+data/vendor_invoice.csv
+data/data.zip
+__pycache__/
+*.pyc

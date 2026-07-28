@@ -1,5 +1,8 @@
+#dataset=[https://youtu.be/nmCfNHjfgEY?si=zI6poiWeW__qhlZj]
 numpy
 pandas
 scikit-learn
 matplotlib
 seaborn
+psycopg2
+sqlalchemy
