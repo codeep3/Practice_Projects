@@ -7,3 +7,8 @@ data/vendor_invoice.csv
 data/data.zip
 __pycache__/
 *.pyc
+tempCodeRunnerFile.py
+note.txt
+test.csv
+temp.py
+data/cleaned/

@@ -1,0 +1,23 @@
+Q1. identify the brand with most size occupation and which brand have more items in stock.
+Q2. identify which brand's stock sell out faster.
+Q3. rank brands based on their sales and profit.
+Q4. How much we spend on each vendor and are the spendings increasing overtime?
+Q5. which vendor supplies most of our inventory?
+Q6. What is the average time between purchase order Date(POdate) & Paydate of each vendor?
+Q7.Which stores have the highest ending inventory value?
+→ end_inventory: onhand × price
+Q8.Which products have the largest percentage decrease from beginning inventory to ending inventory?
+Q9.Which products have high ending inventory but very low sales quantity?
+→ Potential slow-moving/overstocked products.
+Q10.Which brands have the largest gap between purchased quantity and sold quantity?
+Q11.Which vendors account for the largest percentage of total purchasing expenditure?
+Q12.Which vendors have the highest average purchase price per unit?
+Q13.Which products have the largest difference between their average purchase price and selling price?
+Q14.Which vendors supply the greatest variety of distinct products?
+Q15.Which products have the highest revenue per unit sold?
+Q16.Which products generate high revenue but relatively low profit?
+Q17.Which brands contribute the largest percentage of total gross profit?
+Q18.Which stores have high sales revenue but comparatively low gross profit?
+Q19.Which months have the highest purchasing expenditure, and do those months correspond to higher sales in the following month?
+Q20.Which vendors have the longest average time between purchase order date and receiving date?
+Q21.Are there products whose sales consistently increase while their ending inventory decreases?
