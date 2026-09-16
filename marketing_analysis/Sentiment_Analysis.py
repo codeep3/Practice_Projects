@@ -20,8 +20,7 @@ df=pd.read_sql(query,con=conn)
 
 def calculate_sentiment(review):
     sentiment=sia.polarity_scores(review)
-    print(sentiment)
-    return sentiment["compound"]
+    return float(sentiment["compound"])
 
 def categorize_sentiment(score,rating):
     if score >  0.05: #! Positive sentiment
@@ -45,9 +44,8 @@ def categorize_sentiment(score,rating):
             return 'Negative'
         else:
             return 'Neutral' #! Low Rating Neutral Sentiment
-
 def sentiment_bucket(score):
-    if score >=0.5:
+    if score >= 0.5:
         return'0.5 to 1.0'
     elif 0.0<=score<0.5:
         return '0.0 to 0.49'
@@ -56,8 +54,10 @@ def sentiment_bucket(score):
     else:
         return '-1.0 to -0.5'
         
-score=df["reviewtext"].apply(calculate_sentiment)
+# score=df["reviewtext"].apply(calculate_sentiment)
+# print(type(float(score)))
 df['sentiment_score']=df['reviewtext'].apply(calculate_sentiment)
+print(type(df['sentiment_score']))
 df['sentiment_category']=df.apply(lambda row : categorize_sentiment(row['sentiment_score'],row['rating']),axis=1)
-df['sentiment_bucket']=df['reviewtext'].apply(sentiment_bucket)
+df['sentiment_bucket']=df['sentiment_score'].apply(sentiment_bucket)
 df.to_csv('customer_review_with_sentiment.csv',index=False)
